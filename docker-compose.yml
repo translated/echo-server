@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MYSQL_HOST=your_mysql_host
+      - MYSQL_PORT=your_mysql_port
+      - MYSQL_USER=your_mysql_user
+      - MYSQL_PASSWORD=your_mysql_password
+      - MYSQL_DATABASE=your_mysql_database
+      - POSTGRES_HOST=your_postgres_host
+      - POSTGRES_PORT=your_postgres_port
+      - POSTGRES_USER=your_postgres_user
+      - POSTGRES_PASSWORD=your_postgres_password
+      - POSTGRES_DATABASE=your_postgres_database
+      - REDIS_URL=your_redis_url
+    networks:
+      - existing_network
+
+networks:
+  existing_network:
+    external: true
