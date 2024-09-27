@@ -69,7 +69,7 @@ Hiring purpose
      --network existing_network \
      echo-server
    ```
-   or using .env file
+   or using the `.env` file
    ```
    docker build -t echo-server .
    docker run -p 3000:3000 \
