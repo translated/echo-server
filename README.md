@@ -49,6 +49,7 @@ Hiring purpose
    ```
 
    Or using Docker run:
+   
    inline env variables 
    
    ```
@@ -68,7 +69,7 @@ Hiring purpose
      --network existing_network \
      echo-server
    ```
-   using .env file
+   or using .env file
    ```
    docker build -t echo-server .
    docker run -p 3000:3000 \
@@ -77,7 +78,7 @@ Hiring purpose
      echo-server
    ```
 
-4. Access the server at `http://localhost:3000`
+5. Access the server at `http://localhost:3000`
 
 ## API Endpoints
 
