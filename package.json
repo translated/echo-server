@@ -4,8 +4,8 @@
   "description": "An Echo server that connects to MySQL, PostgreSQL, and Redis",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node echo-server.js",
+    "dev": "nodemon echo-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,7 +16,7 @@
     "redis",
     "docker"
   ],
-  "author": "Your Name",
+  "author": "Antonio Farina",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
