@@ -6,17 +6,17 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
-      - MYSQL_HOST=your_mysql_host
-      - MYSQL_PORT=your_mysql_port
-      - MYSQL_USER=your_mysql_user
-      - MYSQL_PASSWORD=your_mysql_password
-      - MYSQL_DATABASE=your_mysql_database
-      - POSTGRES_HOST=your_postgres_host
-      - POSTGRES_PORT=your_postgres_port
-      - POSTGRES_USER=your_postgres_user
-      - POSTGRES_PASSWORD=your_postgres_password
-      - POSTGRES_DATABASE=your_postgres_database
-      - REDIS_URL=your_redis_url
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DATABASE=${POSTGRES_DATABASE}
+      - REDIS_URL=${REDIS_URL}
     networks:
       - existing_network
 
