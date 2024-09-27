@@ -78,9 +78,9 @@ Hiring purpose
      echo-server
    ```
 
-5. Access the server at `http://localhost:3000`
-
 ## API Endpoints
+
+Access the server at `http://localhost:3000`
 
 - `GET /`: Returns a JSON object with the server status and connection information for MySQL, PostgreSQL, and Redis.
 
