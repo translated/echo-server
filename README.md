@@ -27,8 +27,21 @@ Hiring purpose
    git clone https://github.com/yourusername/nodejs-echo-server.git
    cd nodejs-echo-server
    ```
+2. Copy `.env.txt` to `.env` and fill the `.env` file with the relevant informations. 
+  - `PORT`: The port the server will listen on (default: 3000)
+  - `MYSQL_HOST`: MySQL server hostname
+  - `MYSQL_PORT`: MySQL server port
+  - `MYSQL_USER`: MySQL username
+  - `MYSQL_PASSWORD`: MySQL password
+  - `MYSQL_DATABASE`: MySQL database name
+  - `POSTGRES_HOST`: PostgreSQL server hostname
+  - `POSTGRES_PORT`: PostgreSQL server port
+  - `POSTGRES_USER`: PostgreSQL username
+  - `POSTGRES_PASSWORD`: PostgreSQL password
+  - `POSTGRES_DATABASE`: PostgreSQL database name
+  - `REDIS_URL`: Redis connection URL
 
-2. Build and run the Docker container:
+3. Build and run the Docker container:
 
    Using Docker Compose:
    ```
@@ -36,6 +49,8 @@ Hiring purpose
    ```
 
    Or using Docker run:
+   inline env variables 
+   
    ```
    docker build -t echo-server .
    docker run -p 3000:3000 \
@@ -53,25 +68,16 @@ Hiring purpose
      --network existing_network \
      echo-server
    ```
+   using .env file
+   ```
+   docker build -t echo-server .
+   docker run -p 3000:3000 \
+     --env-file .env \
+     --network existing_network \
+     echo-server
+   ```
 
-3. Access the server at `http://localhost:3000`
-
-## Configuration
-
-The server is configured using environment variables. Here are the available options:
-
-- `PORT`: The port the server will listen on (default: 3000)
-- `MYSQL_HOST`: MySQL server hostname
-- `MYSQL_PORT`: MySQL server port
-- `MYSQL_USER`: MySQL username
-- `MYSQL_PASSWORD`: MySQL password
-- `MYSQL_DATABASE`: MySQL database name
-- `POSTGRES_HOST`: PostgreSQL server hostname
-- `POSTGRES_PORT`: PostgreSQL server port
-- `POSTGRES_USER`: PostgreSQL username
-- `POSTGRES_PASSWORD`: PostgreSQL password
-- `POSTGRES_DATABASE`: PostgreSQL database name
-- `REDIS_URL`: Redis connection URL
+4. Access the server at `http://localhost:3000`
 
 ## API Endpoints
 
