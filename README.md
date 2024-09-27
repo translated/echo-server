@@ -1,10 +1,13 @@
 # Node.js Echo Server with MySQL, PostgreSQL, and Redis
 
-This project is a simple Echo server built with Node.js and Express that demonstrates connectivity to MySQL, PostgreSQL, and Redis databases. 
+This project is a simple Echo server built with Node.js and Express, demonstrating connectivity to MySQL, PostgreSQL, and Redis databases. 
 It's designed to be run in a Docker container and can be easily configured using environment variables.
 
 # Context
 Hiring purpose
+
+# Visibility
+Public (readonly) 
 
 ## Features
 
